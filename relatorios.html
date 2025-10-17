@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockCloud - Relatórios</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <!-- Barra lateral -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>StockCloud</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="index.html"><i>📊</i> Dashboard</a></li>
+                <li><a href="inventario.html"><i>📦</i> Products</a></li>
+                <li class="active"><a href="relatorios.html"><i>📈</i> Reports</a></li>
+            </ul>
+        </div>
+
+        <!-- Conteúdo principal -->
+        <div class="main-content">
+            <!-- Página 3: Relatórios -->
+            <div id="reports-page" class="page">
+                <div class="page-header">
+                    <h1>Relatórios</h1>
+                    <p class="page-description">Gere e visualize relatórios sobre seu estoque.</p>
+                </div>
+                
+                <div class="reports-overview">
+                    <div class="report-card">
+                        <h3>Total de Produtos</h3>
+                        <div class="value">1,250</div>
+                        <p class="description">Produtos em estoque</p>
+                    </div>
+                    
+                    <div class="report-card">
+                        <h3>Valor Total do Estoque</h3>
+                        <div class="value">$75,000</div>
+                        <p class="description">Valor total do inventário</p>
+                    </div>
+                    
+                    <div class="report-card">
+                        <h3>Itens Vendidos (30 dias)</h3>
+                        <div class="value">320</div>
+                        <p class="description">Unidades vendidas no último mês</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>Níveis de Estoque por Categoria</h3>
+                    <ul class="category-list">
+                        <li>Eletrônicos</li>
+                        <li>Vestuário</li>
+                        <li>Casa e Jardim</li>
+                        <li>Livros</li>
+                        <li>Brinquedos</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3>Alertas de Estoque Baixo</h3>
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Produto</th>
+                                    <th>Categoria</th>
+                                    <th>Nível do Estoque</th>
+                                    <th>Ponto de Pedido</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Fones de Ouvido Sem Fio</td>
+                                    <td>Eletrônicos</td>
+                                    <td>15 / 100</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td>Vestidos de Verão</td>
+                                    <td>Vestuário</td>
+                                    <td>8 / 50</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>Conjunto de Panelas</td>
+                                    <td>Casa e Jardim</td>
+                                    <td>5 / 25</td>
+                                    <td>10</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

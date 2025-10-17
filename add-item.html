@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockCloud - Sistema de Gerenciamento de Inventário</title>
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+<body>
+    <div class="container">
+        <!-- Barra lateral -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>StockCloud</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="index.html"><i>📊</i> Dashboard</a></li>
+                <li class="active"><a href="inventario.html"><i>📦</i> Products</a></li>
+                <li><a href="relatorios.html"><i>📈</i> Reports</a></li>
+            </ul>
+        </div>
+
+        <!-- Conteúdo principal -->
+        <div class="main-content">
+            <!-- Página 1: Adicionar Item -->
+            <div id="add-item-page" class="page">
+                <div class="page-header">
+                    <h1>Add New Item</h1>
+                    <p class="page-description">Fill in the details below to add a new product to your inventory.</p>
+                </div>
+                
+                <div class="card add-item-form">
+                    <div class="divider"></div>
+                    
+                    <div class="form-group">
+                        <label for="item-name">Item Name</label>
+                        <input type="text" id="item-name" placeholder="e.g. Organic Coffee Beans">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="quantity">Quantity</label>
+                            <input type="number" id="quantity" placeholder="e.g. 100">
+                        </div>
+                        <div class="form-group">
+                            <label for="unit-price">Unit Price ($)</label>
+                            <input type="number" id="unit-price" step="0.01" placeholder="e.g. 19.99">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="category">Category</label>
+                            <select id="category">
+                                <option value="">Select category</option>
+                                <option value="electronics">Electronics</option>
+                                <option value="clothing">Clothing</option>
+                                <option value="home-garden">Home & Garden</option>
+                                <option value="books">Books</option>
+                                <option value="toys">Toys</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="supplier">Supplier</label>
+                            <select id="supplier">
+                                <option value="">Select supplier</option>
+                                <option value="supplier1">Supplier 1</option>
+                                <option value="supplier2">Supplier 2</option>
+                                <option value="supplier3">Supplier 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="divider"></div>
+                    
+                    <button class="btn-primary">Add Item to Stock</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockCloud - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    </head>
+<body>
+    <div class="container">
+        <!-- Barra lateral -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>StockCloud</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="active"><a href="index.html"><i>📊</i> Dashboard</a></li>
+                <li><a href="inventario.html"><i>📦</i> Products</a></li>
+                <li><a href="relatorios.html"><i>📈</i> Reports</a></li>
+            </ul>
+        </div>
+
+        <!-- Conteúdo principal -->
+        <div class="main-content">
+            <!-- Página 2: Dashboard -->
+            <div id="dashboard-page" class="page">
+                <div class="page-header">
+                    <h1>Dashboard</h1>
+                </div>
+                
+                <div class="dashboard-stats">
+                    <div class="stat-card">
+                        <h3>Total Items</h3>
+                        <div class="value">1,250</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <h3>Low Stock Items</h3>
+                        <div class="value">75</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <h3>Total Stock Value</h3>
+                        <div class="value">$50,000</div>
+                    </div>
+                </div>
+                
+                <div class="dashboard-actions">
+                    <a href="add-item.html" class="btn btn-primary">+ Add Item</a>
+                    <a href="relatorios.html" class="btn btn-secondary">View Reports</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
