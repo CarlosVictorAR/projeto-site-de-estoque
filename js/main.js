@@ -1,3 +1,4 @@
+import { addItemtoArray } from "./addItem.js";
 let arrayOfItens = [];
 class Item {
     constructor (id, nome, categoria, quantidade, preco, dataEntrada){
@@ -9,4 +10,9 @@ class Item {
         this.dataEntrada = dataEntrada;
     }
 }
+
+let addButon = document.querySelector('.add-button');
+// Passamos a classe Item e o array para evitar dependência circular entre módulos
+addButon.addEventListener('click', () => addItemtoArray(Item, arrayOfItens));
+
 
