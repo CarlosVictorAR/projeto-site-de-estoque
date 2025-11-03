@@ -13,7 +13,7 @@ Em desenvolvimento
 
 # Funcionalidades
 
-- [ ] **Estrutura de Dados Inicial:**
+- [X] **Estrutura de Dados Inicial:**
 Crie um array de objetos para representar os produtos cadastrados no estoque. 
 Cada objeto deve conter os campos: id, nome, categoria, quantidade, preco e dataEntrada. 
 const produtos = [ 
