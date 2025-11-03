@@ -15,7 +15,6 @@ let addButton = document.querySelector('.add-button');
 addButton.addEventListener('click', () => {
     if(validateItemInput()){
         addItemtoArray(Item, arrayOfItens);
-        console.log(arrayOfItens);
     }
 
 });
