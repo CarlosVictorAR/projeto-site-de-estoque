@@ -8,6 +8,5 @@ function addItemtoArray(ItemClass, arrayOfItens) {
     let entryDate = new Date().toLocaleDateString("pt-BR");
     let newItem = new ItemClass(contadorID, name, category, quantity, price, entryDate);
     arrayOfItens.push(newItem);
-    console.log(newItem);
     contadorID++;
 }
