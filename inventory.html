@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockCloud - Inventário</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <!-- Barra lateral -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>StockCloud</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="index.html"> Dashboard</a></li>
+                <li class="active"><a href="inventory.html"> Products</a></li>
+                <li><a href="report.html"> Reports</a></li>
+            </ul>
+        </div>
+
+        <!-- Conteúdo principal -->
+        <div class="main-content">
+            <!-- Página 4: Inventário -->
+            <div id="inventory-page" class="page">
+                <div class="page-header">
+                    <h1>Inventory</h1>
+                    <p class="page-description">Manage and view all products in your inventory..</p>
+                </div>
+                
+                <div class="inventory-header">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search for products...">
+                        
+                    </div>
+                </div>
+                
+                <div class="filters">
+                    <div class="filter-group">
+                        <label for="category-filter">Category</label>
+                        <select id="category-filter">
+                            <option value="">All</option>
+                            <option value="electronics">Electronics</option>
+                            <option value="clothing">Clothing</option>
+                            <option value="home-garden">Home & Garden</option>
+                            <option value="books">Books</option>
+                            <option value="toys">Toys</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="status-filter">Status</label>
+                        <select id="status-filter">
+                            <option value="">All</option>
+                            <option value="in-stock">In Stock</option>
+                            <option value="low-stock">Low Stock</option>
+                            <option value="out-of-stock">Out of Stock</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="sort-by">Sort by</label>
+                        <select id="sort-by">
+                            <option value="name">Name</option>
+                            <option value="quantity">Quantity</option>
+                            <option value="price">Price</option>
+                            <option value="date">Date</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <table class="inventory-table">
+                        <thead>
+                            <tr>
+                                <th>Product</th>
+                                <th>Category</th>
+                                <th>Quantity</th>
+                                <th>Unit Price</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> Wireless Headphone</td>
+                                <td>Electronics</td>
+                                <td>15</td>
+                                <td>$79.99</td>
+                                <td>Low Stock</td>
+                            </tr>
+                            <tr>
+                                <td>Summer Dresses</td>
+                                <td>Clothing</td>
+                                <td>8</td>
+                                <td>$39.99</td>
+                                <td>Low Stock</td>
+                            </tr>
+                            <tr>
+                                <td>Set of pots and pans</td>
+                                <td>Home & Garden</td>
+                                <td>25</td>
+                                <td>$129.99</td>
+                                <td>In Stock</td>
+                            </tr>
+                            <tr>
+                                <td>Recipe Book</td>
+                                <td>Books</td>
+                                <td>42</td>
+                                <td>$24.99</td>
+                                <td>In Stock</td>
+                            </tr>
+                            <tr>
+                                <td>Puzzle 1000 pieces</td>
+                                <td>Toys</td>
+                                <td>0</td>
+                                <td>$19.99</td>
+                                <td>Out of Stock</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

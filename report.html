@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockCloud - Relatórios</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <div class="container">
+        <!-- Barra lateral -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <h2>StockCloud</h2>
+            </div>
+            <ul class="sidebar-menu">
+                <li><a href="index.html"> Dashboard</a></li>
+                <li><a href="inventory.html"> Products</a></li>
+                <li class="active"><a href="report.html"> Reports</a></li>
+            </ul>
+        </div>
+
+        <!-- Conteúdo principal -->
+        <div class="main-content">
+            <!-- Página 3: Relatórios -->
+            <div id="reports-page" class="page">
+                <div class="page-header">
+                    <h1>Reports</h1>
+                    <p class="page-description">Generate and view reports about your inventory.</p>
+                </div>
+                
+                <div class="reports-overview">
+                    <div class="report-card">
+                        <h3>Total Products </h3>
+                        <div class="value">1,250</div>
+                        <p class="description">Products in stock</p>
+                    </div>
+                    
+                    <div class="report-card">
+                        <h3>Total Stock Value</h3>
+                        <div class="value">$75,000</div>
+                        <p class="description">Total inventory value</p>
+                    </div>
+                    
+                    <div class="report-card">
+                        <h3>Items Sold (30 days)</h3>
+                        <div class="value">320</div>
+                        <p class="description">Units sold in the last month</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>Stock Levels by Category</h3>
+                    <ul class="category-list">
+                        <li>Electronics</li>
+                        <li>Clothing</li>
+                        <li>Home & Garden</li>
+                        <li>Books</li>
+                        <li>Toys</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3>Low Stock Alerts</h3>
+                    <div class="table-container">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Category</th>
+                                    <th>Stock Level</th>
+                                    <th>Reorder Point</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Wireless Headphone</td>
+                                    <td>Electronics</td>
+                                    <td>15 / 100</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td>Summer Dresses</td>
+                                    <td>Clothing</td>
+                                    <td>8 / 50</td>
+                                    <td>10</td>
+                                </tr>
+                                <tr>
+                                    <td>Cookware Set</td>
+                                    <td>Home & Garden</td>
+                                    <td>5 / 25</td>
+                                    <td>10</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
