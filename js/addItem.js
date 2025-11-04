@@ -1,5 +1,6 @@
 export { addItemtoArray, validateItemInput };
 let counterID = 1;
+
 function addItemtoArray(ItemClass, arrayOfItems) {
     let name = document.querySelector('#item-name').value;
     let category = document.querySelector('#category').value;
@@ -8,6 +9,12 @@ function addItemtoArray(ItemClass, arrayOfItems) {
     let entryDate = new Date().toLocaleDateString("pt-BR");
     let newItem = new ItemClass(counterID, name, category, quantity, price, entryDate);
     arrayOfItems.push(newItem);
+    window.localStorage.setItem('items', JSON.stringify(arrayOfItems));
+    Swal.fire({
+        icon: 'success',
+        title: 'Item added successfully!',
+    });
+    document.querySelector('#item-name').value = "";
     counterID++;
 }
 
