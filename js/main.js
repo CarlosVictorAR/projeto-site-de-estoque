@@ -1,21 +1,25 @@
 import { addItemtoArray, validateItemInput } from "./addItem.js";
-let arrayOfItens = [];
+let arrayOfItems = [];
 class Item {
-    constructor (id, nome, categoria, quantidade, preco, dataEntrada){
+    constructor (id, name, category, quantity, price, dateEntry){
         this.id = id;
-        this.nome = nome;
-        this.categoria = categoria;
-        this.quantidade = quantidade;
-        this.preco = preco;
-        this.dataEntrada = dataEntrada;
+        this.name = name;
+        this.category = category;
+        this.quantity = quantity;
+        this.price = price;
+        this.dateEntry = dateEntry;
     }
 }
 
+// addButton on Add Itens Page
 let addButton = document.querySelector('.add-button');
 addButton.addEventListener('click', () => {
     if(validateItemInput()){
-        addItemtoArray(Item, arrayOfItens);
+        addItemtoArray(Item, arrayOfItems);
+        console.log(arrayOfItems);
     }
 
 });
+
+
 
